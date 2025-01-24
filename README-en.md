@@ -1,7 +1,5 @@
 # Here to Help
 
-[![GitHub license](https://img.shields.io/github/license/iranian-github/here-to-help)](
-
 Here to Help is a collection of resources for people in need of support. This repository is a community-driven project, and we welcome contributions from anyone who wants to help.
 
 ## Disclaimer
