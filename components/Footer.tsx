@@ -22,11 +22,17 @@ export default function Footer() {
       </p>
       <p className="border-b border-[#d2d2d7] pb-3 text-right leading-relaxed text-xs sm:text-sm">
         این یک{" "}
-        <Link href="https://github.com/iranian-github/here-to-help">
+        <Link
+          target="_blank"
+          href="https://github.com/iranian-github/here-to-help"
+        >
           پروژه‌ی متن باز
         </Link>{" "}
         است. اگر مایل به مشارکت هستید، از{" "}
-        <Link href="https://github.com/iranian-github/here-to-help/issues/new">
+        <Link
+          target="_blank"
+          href="https://github.com/iranian-github/here-to-help/issues/new/choose"
+        >
           اینجا
         </Link>{" "}
         می‌توانید کمک کنید.
