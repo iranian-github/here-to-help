@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Vazirmatn";
+  src: url("/fonts/webfonts/Vazirmatn[wght].woff2")
+      format("woff2 supports variations"),
+    url("/fonts/webfonts/Vazirmatn[wght].woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  font-family: "Vazirmatn", Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: rgb(85, 85, 211);
+}
