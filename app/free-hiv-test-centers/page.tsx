@@ -16,40 +16,45 @@ const FreeHIVTestCenters = () => {
           <table className="min-w-full border-collapse border border-gray-300">
             <thead>
               <tr className="bg-gray-100">
-                <th className="border border-gray-300 p-3 text-right">شهر</th>
-                <th className="border border-gray-300 p-3 text-right">آدرس</th>
-                <th className="border border-gray-300 p-3 text-right">
-                  شماره تماس
-                </th>
+                <th className="border border-gray-300 p-3">شهر</th>
+                <th className="border border-gray-300 p-3">آدرس</th>
+                <th className="border border-gray-300 p-3">شماره تماس</th>
               </tr>
             </thead>
             <tbody>
               {testCenters.map((center, index) => (
                 <tr key={index} className="hover:bg-gray-50">
-                  <td className="border border-gray-300 p-3">{center.city}</td>
-                  <td className="border border-gray-300 p-3">
+                  <td className="border border-gray-300 p-3 text-center">
+                    {center.city}
+                  </td>
+                  <td className="border border-gray-300 p-3 text-center">
                     {center.address}
                   </td>
-                  <td className="border border-gray-300 p-3 font-mono">
-                    <Link href={`tel:${center.phone}`}>
-                      {toFarsiNumber(parseInt(center.phone))}
-                    </Link>
+                  <td className="border border-gray-300 p-3 font-mono text-center">
+                    {center.phoneNumbers.map((phone, idx) => (
+                      <span key={idx}>
+                        <Link href={`tel:${phone}`} key={idx}>
+                          {toFarsiNumber(parseInt(phone))}
+                        </Link>
+                        {idx < center.phoneNumbers.length - 1 && <br />}
+                      </span>
+                    ))}
                   </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-        <p className="text-sm text-gray-600 mt-4 text-right">
+        <p className="text-sm text-gray-600 mt-4">
           منبع:{" "}
-          <a
+          <Link
             href="https://doctoreto.com/blog/free-aids-test-centers/"
             className="text-blue-600 hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
             دکترتو
-          </a>
+          </Link>
         </p>
       </main>
     </>
