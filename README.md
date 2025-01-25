@@ -1,15 +1,17 @@
-# اینجائیم برای کمک
+# Here to Help
 
-مجموعه‌ای از منابع برای افرادی که به کمک نیاز دارند. این مخزن یک پروژه اجتماعی است و ما از مشارکت تمامی افرادی که می‌خواهند کمک کنند، استقبال می‌کنیم.
+You can find the Persian version of this document [here](README-fa.md).
 
-## سلب مسئولیت
+**Here to Help** is a collection of resources for people in need of support. This repository is a community-driven project, and we welcome contributions from anyone who wants to help.
 
-اطلاعات ارائه شده در این مخزن صرفاً جنبه اطلاع‌رسانی عمومی دارد. خدمات فهرست شده در اینجا توسط سازمان‌های ثالث ارائه می‌شود و ما کیفیت هیچ خدمات خاصی را تضمین یا تأیید نمی‌کنیم.
+## Disclaimer
 
-## مشارکت
+The information provided in this repository is for general informational purposes only. Services listed here are offered by external organizations, and we do not endorse or guarantee any specific service's quality.
 
-ما از مشارکت‌های شما در این مخزن برای به‌روز و جامع نگه داشتن فهرست خود استقبال می‌کنیم. اگر از سرویس‌های جدیدی که باید به اینجا اضافه شوند اطلاع دارید، لطفاً یک Pull request ارسال کنید یا [یک issue جدید باز کنید](https://github.com/iranian-github/here-to-help/issues).
+## Contributing
 
-## مجوز
+We welcome contributions to this repository to keep our directory comprehensive and up-to-date. If you know of additional services that should be included, please feel free to submit a pull request or [open an issue](https://github.com/iranian-github/here-to-help/issues).
 
-این پروژه تحت مجوز MIT منتشر شده است - برای جزئیات به فایل [LICENSE.md](LICENSE.md) مراجعه کنید.
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
