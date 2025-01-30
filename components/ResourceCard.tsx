@@ -34,7 +34,7 @@ export default function ResourceCard({
             {phone && (
               <Link
                 href={`tel:${phone}`}
-                className="bg-blue-500 text-white px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium hover:bg-blue-400 transition-colors text-center w-full sm:w-auto"
+                className="bg-blue-500 text-white px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium hover:bg-blue-600 transition-colors text-center w-full sm:w-auto"
               >
                 تماس
               </Link>
@@ -43,7 +43,7 @@ export default function ResourceCard({
               <Link
                 href={website}
                 target="_blank"
-                className="bg-blue-500 text-white px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium hover:bg-blue-400 transition-colors text-center w-full sm:w-auto"
+                className="bg-blue-500 text-white px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium hover:bg-blue-600 transition-colors text-center w-full sm:w-auto"
               >
                 بیشتر بدانید
               </Link>
@@ -54,7 +54,7 @@ export default function ResourceCard({
                   key={item.url}
                   href={item.url}
                   target="_blank"
-                  className="bg-blue-500 text-white px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium hover:bg-blue-400 transition-colors text-center w-full sm:w-auto"
+                  className="bg-blue-500 text-white px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium hover:bg-blue-600 transition-colors text-center w-full sm:w-auto"
                 >
                   {item.label}
                 </Link>
@@ -71,7 +71,7 @@ export default function ResourceCard({
             {phone && (
               <Link
                 href={`tel:${phone}`}
-                className="bg-blue-500 text-white px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium hover:bg-blue-400 transition-colors text-center w-full sm:w-auto"
+                className="bg-blue-500 text-white px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium hover:bg-blue-600 transition-colors text-center w-full sm:w-auto hover:text-white"
               >
                 تماس
               </Link>
@@ -79,7 +79,7 @@ export default function ResourceCard({
             {website && (
               <Link
                 href={website}
-                className="bg-blue-500 text-white px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium hover:bg-blue-400 transition-colors text-center w-full sm:w-auto"
+                className="bg-blue-500 text-white px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium hover:bg-blue-600 transition-colors text-center w-full sm:w-auto hover:text-white"
               >
                 بیشتر بدانید
               </Link>
@@ -90,7 +90,7 @@ export default function ResourceCard({
                   key={item.url}
                   href={item.url}
                   target="_blank"
-                  className="bg-blue-500 text-white px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium hover:bg-blue-400 transition-colors text-center w-full sm:w-auto"
+                  className="bg-blue-500 text-white px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium hover:bg-blue-600 transition-colors text-center w-full sm:w-auto hover:text-white"
                 >
                   {item.label}
                 </Link>

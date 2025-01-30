@@ -29,5 +29,10 @@ body {
 }
 
 a {
-  color: rgb(85, 85, 211);
+  color: #0066cc;
+  font-weight: 500;
+}
+
+a:hover {
+  color: #0055cc;
 }
