@@ -4,7 +4,6 @@ about: Suggest a new service | پیشنهاد سرویس جدید
 title: ''
 labels: 'enhancement'
 assignees: ''
-
 ---
 
 **Problem Description | شرح مشکل**

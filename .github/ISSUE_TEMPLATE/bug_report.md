@@ -4,7 +4,6 @@ about: Report a bug | گزارش یک مشکل نرم‌افزاری
 title: ''
 labels: 'bug'
 assignees: ''
-
 ---
 
 **Bug Description | شرح باگ**
