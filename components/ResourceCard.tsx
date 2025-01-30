@@ -1,40 +1,24 @@
-import Link from "next/link";
+import Link from 'next/link'
 
 interface ResourceCardProps {
-  title: string;
-  description?: string;
-  phone?: string;
-  website?: string;
-  other?: { url: string; label: string }[];
+  title: string
+  description?: string
+  phone?: string
+  website?: string
+  other?: { url: string; label: string }[]
 }
 
-export default function ResourceCard({
-  title,
-  description,
-  phone,
-  website,
-  other,
-}: ResourceCardProps) {
+export default function ResourceCard({ title, description, phone, website, other }: ResourceCardProps) {
   return (
-    <div className="p-4 sm:p-6 rounded-lg sm:rounded-xl bg-gray-100 h-full flex flex-col justify-center">
-      <div
-        className={`${
-          !description ? "sm:flex sm:justify-between sm:items-center" : ""
-        }`}
-      >
-        <h3
-          className={`text-base sm:text-lg font-bold ${
-            description ? "mb-3 sm:mb-4" : ""
-          }`}
-        >
-          {title}
-        </h3>
+    <div className='flex h-full flex-col justify-center rounded-lg bg-gray-100 p-4 sm:rounded-xl sm:p-6'>
+      <div className={`${!description ? 'sm:flex sm:items-center sm:justify-between' : ''}`}>
+        <h3 className={`text-base font-bold sm:text-lg ${description ? 'mb-3 sm:mb-4' : ''}`}>{title}</h3>
         {!description && (
-          <div className="flex flex-col sm:flex-row gap-2 sm:gap-2.5 mt-auto">
+          <div className='mt-auto flex flex-col gap-2 sm:flex-row sm:gap-2.5'>
             {phone && (
               <Link
                 href={`tel:${phone}`}
-                className="bg-blue-500 text-white px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium hover:bg-blue-600 transition-colors text-center w-full sm:w-auto"
+                className='w-full rounded-full bg-blue-500 px-4 py-2.5 text-center text-xs font-medium text-white transition-colors hover:bg-blue-600 sm:w-auto sm:px-5 sm:text-sm'
               >
                 تماس
               </Link>
@@ -42,8 +26,8 @@ export default function ResourceCard({
             {website && (
               <Link
                 href={website}
-                target="_blank"
-                className="bg-blue-500 text-white px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium hover:bg-blue-600 transition-colors text-center w-full sm:w-auto"
+                target='_blank'
+                className='w-full rounded-full bg-blue-500 px-4 py-2.5 text-center text-xs font-medium text-white transition-colors hover:bg-blue-600 sm:w-auto sm:px-5 sm:text-sm'
               >
                 بیشتر بدانید
               </Link>
@@ -53,8 +37,8 @@ export default function ResourceCard({
                 <Link
                   key={item.url}
                   href={item.url}
-                  target="_blank"
-                  className="bg-blue-500 text-white px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium hover:bg-blue-600 transition-colors text-center w-full sm:w-auto"
+                  target='_blank'
+                  className='w-full rounded-full bg-blue-500 px-4 py-2.5 text-center text-xs font-medium text-white transition-colors hover:bg-blue-600 sm:w-auto sm:px-5 sm:text-sm'
                 >
                   {item.label}
                 </Link>
@@ -64,14 +48,12 @@ export default function ResourceCard({
       </div>
       {description && (
         <>
-          <p className="mb-4 sm:mb-5 text-sm sm:text-base leading-relaxed">
-            {description}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-2 sm:gap-2.5 mt-auto">
+          <p className='mb-4 text-sm leading-relaxed sm:mb-5 sm:text-base'>{description}</p>
+          <div className='mt-auto flex flex-col gap-2 sm:flex-row sm:gap-2.5'>
             {phone && (
               <Link
                 href={`tel:${phone}`}
-                className="bg-blue-500 text-white px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium hover:bg-blue-600 transition-colors text-center w-full sm:w-auto hover:text-white"
+                className='w-full rounded-full bg-blue-500 px-4 py-2.5 text-center text-xs font-medium text-white transition-colors hover:bg-blue-600 hover:text-white sm:w-auto sm:px-5 sm:text-sm'
               >
                 تماس
               </Link>
@@ -79,7 +61,7 @@ export default function ResourceCard({
             {website && (
               <Link
                 href={website}
-                className="bg-blue-500 text-white px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium hover:bg-blue-600 transition-colors text-center w-full sm:w-auto hover:text-white"
+                className='w-full rounded-full bg-blue-500 px-4 py-2.5 text-center text-xs font-medium text-white transition-colors hover:bg-blue-600 hover:text-white sm:w-auto sm:px-5 sm:text-sm'
               >
                 بیشتر بدانید
               </Link>
@@ -89,8 +71,8 @@ export default function ResourceCard({
                 <Link
                   key={item.url}
                   href={item.url}
-                  target="_blank"
-                  className="bg-blue-500 text-white px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-medium hover:bg-blue-600 transition-colors text-center w-full sm:w-auto hover:text-white"
+                  target='_blank'
+                  className='w-full rounded-full bg-blue-500 px-4 py-2.5 text-center text-xs font-medium text-white transition-colors hover:bg-blue-600 hover:text-white sm:w-auto sm:px-5 sm:text-sm'
                 >
                   {item.label}
                 </Link>
@@ -99,5 +81,5 @@ export default function ResourceCard({
         </>
       )}
     </div>
-  );
+  )
 }

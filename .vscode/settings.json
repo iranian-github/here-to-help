@@ -4,6 +4,7 @@
   "javascript.format.enable": false,
   "typescript.format.enable": false,
   "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit",
     "source.fixAll.stylelint": "explicit"
@@ -15,5 +16,5 @@
   "[typescriptreact]": {
     "editor.formatOnSave": true,
     "editor.formatOnPaste": false
-  },
+  }
 }

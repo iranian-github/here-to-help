@@ -1,12 +1,10 @@
 export default function Header() {
   return (
-    <header className="text-center mt-24 sm:mt-16 lg:mt-32 mb-8 sm:mb-12 lg:mb-16">
-      <h1 className="text-3xl sm:text-4xl lg:text-5xl mb-3 lg:mb-5 font-bold">
-        اینجائیم برای کمک
-      </h1>
-      <p className="text-base sm:text-lg leading-relaxed max-w-2xl mx-auto text-gray-500">
+    <header className='mb-8 mt-24 text-center sm:mb-12 sm:mt-16 lg:mb-16 lg:mt-32'>
+      <h1 className='mb-3 text-3xl font-bold sm:text-4xl lg:mb-5 lg:text-5xl'>اینجائیم برای کمک</h1>
+      <p className='mx-auto max-w-2xl text-base leading-relaxed text-gray-500 sm:text-lg'>
         لازم نیست به تنهایی از این مسیر عبور کنید.
       </p>
     </header>
-  );
+  )
 }
