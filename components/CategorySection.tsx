@@ -25,7 +25,7 @@ export default function CategorySection({
     <section className="category-section bg-white rounded-xl sm:rounded-2xl mb-3 sm:mb-4 shadow-md border-r-4 sm:border-r-8 border-[#8B5CF6] overflow-hidden mx-0 sm:mx-2.5 transition-all duration-500">
       <h2
         onClick={() => setIsOpen(!isOpen)}
-        className={`text-base md:text-xl lg:text-2xl m-0 p-5 sm:p-7 bg-white cursor-pointer flex justify-between items-center transition-colors group ${
+        className={`text-base select-none md:text-xl lg:text-2xl m-0 p-5 sm:p-7 bg-white cursor-pointer flex justify-between items-center transition-colors group ${
           !isOpen ? "hover:bg-card-hover" : ""
         }`}
       >
