@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 import Image from 'next/image'
 import Footer from '@/components/Footer'
+import { BackToTop } from '@/components/BackToTop'
 
 export const metadata: Metadata = {
   title: 'Here to Help | اینجائیم برای کمک',
@@ -58,6 +59,7 @@ export default function RootLayout({
         />
         <div className='mx-auto flex min-h-screen max-w-[1100px] flex-col px-4 sm:px-6 lg:px-8'>
           {children}
+          <BackToTop />
           <Footer />
         </div>
       </body>
