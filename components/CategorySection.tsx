@@ -10,7 +10,7 @@ interface CategorySectionProps {
     description?: string
     phone?: string
     website?: string
-    other?: { url: string; label: string }[]
+    other?: { url: string; label: string; newTab?: boolean }[]
   }>
 }
 

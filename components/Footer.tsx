@@ -24,9 +24,9 @@ export default function Footer() {
         <Link target='_blank' href='https://github.com/iranian-github/here-to-help'>
           پروژه‌ی متن باز
         </Link>{' '}
-        است. اگر مایل به مشارکت هستید، از{' '}
+        است. اگر مایل به مشارکت هستید، از طریق{' '}
         <Link target='_blank' href='https://github.com/iranian-github/here-to-help/issues/new/choose'>
-          اینجا
+          ثبت مشکل یا پیشنهاد در گیت‌هاب
         </Link>{' '}
         می‌توانید کمک کنید.
       </p>

@@ -5,7 +5,7 @@ interface ResourceCardProps {
   description?: string
   phone?: string
   website?: string
-  other?: { url: string; label: string }[]
+  other?: { url: string; label: string; newTab?: boolean }[]
 }
 
 export default function ResourceCard({ title, description, phone, website, other }: ResourceCardProps) {
@@ -50,7 +50,12 @@ export default function ResourceCard({ title, description, phone, website, other
             )}
             {other &&
               other.map((item) => (
-                <Link key={item.url} href={item.url} target='_blank' className='resource-button'>
+                <Link
+                  key={item.url}
+                  href={item.url}
+                  target={item.newTab ? '_blank' : '_self'}
+                  className='resource-button'
+                >
                   {item.label}
                 </Link>
               ))}
