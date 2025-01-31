@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <Header />
 
-      <main className='mb-16 flex-grow'>
+      <main className='flex-grow lg:mb-16'>
         {categories.map((category, index) => (
           <CategorySection key={index} {...category} />
         ))}
