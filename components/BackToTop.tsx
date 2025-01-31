@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import SvgChevronDown from './ChevronDown'
+import SvgChevronDown from '@/components/svg/ChevronDown'
 
 export const BackToTop = () => {
   const [isVisible, setIsVisible] = useState(false)

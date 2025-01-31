@@ -37,6 +37,34 @@ a:hover {
   color: #0055cc;
 }
 
+.driverjs-theme {
+  direction: rtl !important;
+  font-family: inherit !important;
+}
+.driverjs-theme * {
+  font-family: inherit !important;
+  text-shadow: none !important;
+}
+.driver-popover-title {
+  font-weight: bold !important;
+}
+.driver-popover-description {
+  margin-bottom: 1rem !important;
+}
+.driver-popover-footer button {
+  font-family: inherit !important;
+  background-color: rgb(55 65 81) !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 0.5rem !important;
+  color: white !important;
+  text-shadow: none !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+.driver-popover-footer button:hover {
+  background-color: rgb(75 85 99) !important;
+}
+
 @layer components {
   .resource-card {
     @apply flex h-full flex-col justify-center rounded-lg bg-gray-100 p-4 sm:rounded-xl sm:p-6;
