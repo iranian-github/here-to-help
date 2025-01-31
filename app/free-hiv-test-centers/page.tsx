@@ -8,7 +8,7 @@ const FreeHIVTestCenters = () => {
     <>
       <Header />
       <main className='flex-grow lg:mb-16'>
-        <h1 className='mb-12 text-center text-3xl font-bold'>
+        <h1 className='mb-12 text-center text-xl font-bold md:text-3xl'>
           لیست مراکز آزمایش رایگان ایدز و مشاوره بیماری های رفتاری
         </h1>
 
