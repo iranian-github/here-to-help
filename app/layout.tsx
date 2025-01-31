@@ -6,16 +6,33 @@ import { BackToTop } from '@/components/BackToTop'
 import EscapeButton from '@/components/EscapeButton'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://heretohelp.ir'),
   title: 'Here to Help | اینجائیم برای کمک',
-  description: 'منابع و خدمات رایگان برای کمک به شما در مواقع بحرانی',
+  description:
+    'منابع و خدمات رایگان برای کمک به شما در مواقع بحرانی - ارائه اطلاعات و منابع ضروری برای حمایت از شما در شرایط دشوار',
+  keywords: ['کمک رسانی', 'خدمات رایگان', 'منابع بحران', 'حمایت اجتماعی', 'کمک اضطراری'],
   openGraph: {
     type: 'website',
-    locale: 'fa_IR',
+    locale: 'fa',
     url: 'https://heretohelp.ir/',
     title: 'Here to Help | اینجائیم برای کمک',
-    description: 'منابع و خدمات رایگان برای کمک به شما در مواقع بحرانی',
-    countryName: 'Iran',
+    description:
+      'منابع و خدمات رایگان برای کمک به شما در مواقع بحرانی - ارائه اطلاعات و منابع ضروری برای حمایت از شما در شرایط دشوار',
     siteName: 'Here to Help',
+    images: [
+      {
+        url: '/website-social-card.png',
+        width: 1200,
+        height: 630,
+        alt: 'Here to Help | اینجائیم برای کمک',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Here to Help | اینجائیم برای کمک',
+    description: 'منابع و خدمات رایگان برای کمک به شما در مواقع بحرانی',
+    images: ['/website-social-card.png'],
   },
   icons: {
     icon: [
@@ -36,6 +53,16 @@ export const metadata: Metadata = {
     ],
   },
   manifest: '/site.webmanifest',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
 }
 
 export const viewport: Viewport = {
