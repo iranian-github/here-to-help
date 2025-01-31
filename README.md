@@ -10,7 +10,7 @@ The information provided in this repository is for general informational purpose
 
 ## Contributing
 
-We welcome contributions to this repository to keep our directory comprehensive and up-to-date. If you know of additional services that should be included, please feel free to submit a pull request or [open an issue](https://github.com/iranian-github/here-to-help/issues).
+Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on how to add new resources and contribute to this project. We welcome all contributions that help make this resource more helpful and comprehensive.
 
 ## License
 
