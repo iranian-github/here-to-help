@@ -44,8 +44,8 @@ export default function ResourceCard({ title, description, phone, website, other
               </Link>
             )}
             {website && (
-              <Link href={website} className='resource-button'>
-                بیشتر بدانید
+              <Link href={website} target='_blank' rel='noopener noreferrer' className='resource-button'>
+                وب‌سایت
               </Link>
             )}
             {other &&
