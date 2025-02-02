@@ -2,8 +2,26 @@ import Header from '@/components/Header'
 import { testCenters } from '@/data/freeHIVTestCenters'
 import { toFarsiNumber } from '@/utils/farsiNumber'
 import Link from 'next/link'
+import { Metadata } from 'next'
 
-const FreeHIVTestCenters = () => {
+const title = 'لیست مراکز آزمایش رایگان HIV'
+const description = 'لیست مراکز آزمایش رایگان ایدز و مشاوره بیماری های رفتاری در ایران'
+
+export const metadata: Metadata = {
+  title,
+  description,
+  keywords: ['مراکز آزمایش رایگان ایدز', 'مراکز مشاوره بیماری های رفتاری'],
+  openGraph: {
+    title,
+    description,
+  },
+  twitter: {
+    title,
+    description,
+  },
+}
+
+export default function FreeHIVTestCenters() {
   return (
     <>
       <Header />
@@ -56,5 +74,3 @@ const FreeHIVTestCenters = () => {
     </>
   )
 }
-
-export default FreeHIVTestCenters
