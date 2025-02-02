@@ -48,7 +48,7 @@ export default function FreeHIVTestCenters() {
                     {center.phoneNumbers.map((phone, idx) => (
                       <span key={idx}>
                         <Link href={`tel:${phone}`} key={idx}>
-                          {toFarsiNumber(parseInt(phone))}
+                          {toFarsiNumber(phone)}
                         </Link>
                         {idx < center.phoneNumbers.length - 1 && <br />}
                       </span>
