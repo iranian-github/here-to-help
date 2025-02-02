@@ -7,10 +7,18 @@ import XIcon from '@/components/svg/XIcon'
 
 const EscapeButton = () => {
   const handleEscape = useCallback(() => {
-    // Clear browser history for current page
-    if (typeof window !== 'undefined') {
-      window.location.replace('https://www.google.com')
+    // Show overlay
+    const overlay = document.getElementById('escape-overlay')
+    if (overlay) {
+      overlay.classList.remove('hidden')
     }
+
+    // Redirect after brief delay
+    setTimeout(() => {
+      if (typeof window !== 'undefined') {
+        window.location.replace('https://www.google.com')
+      }
+    }, 50)
   }, [])
 
   useEffect(() => {

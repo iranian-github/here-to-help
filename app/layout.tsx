@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Footer from '@/components/Footer'
 import { BackToTop } from '@/components/BackToTop'
 import EscapeButton from '@/components/EscapeButton'
+import Overlay from '@/components/Overlay'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://heretohelp.ir'),
@@ -78,6 +79,7 @@ export default function RootLayout({
   return (
     <html lang='fa' dir='rtl'>
       <body className='relative m-0 min-h-screen leading-relaxed antialiased'>
+        <Overlay />
         <Image
           src='images/background.svg'
           alt='Background image'
