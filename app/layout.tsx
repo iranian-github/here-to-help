@@ -22,7 +22,8 @@ export const metadata: Metadata = {
     siteName: 'Here to Help',
     images: [
       {
-        url: '/website-social-card.png',
+        url: 'https://heretohelp.ir/website-social-card.png',
+        type: 'image/png',
         width: 1200,
         height: 630,
         alt: 'Here to Help | اینجائیم برای کمک',
@@ -33,7 +34,11 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Here to Help | اینجائیم برای کمک',
     description: 'منابع و خدمات رایگان برای کمک به شما در مواقع بحرانی',
-    images: ['/website-social-card.png'],
+    images: {
+      url: 'https://heretohelp.ir/website-social-card.png',
+      type: 'image/png',
+      alt: 'Here to Help | اینجائیم برای کمک',
+    },
   },
   icons: {
     icon: [
@@ -54,6 +59,7 @@ export const metadata: Metadata = {
     ],
   },
   manifest: '/site.webmanifest',
+  category: 'health',
   robots: {
     index: true,
     follow: true,
