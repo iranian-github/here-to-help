@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server'
 import { testCenters } from '@/data/freeHIVTestCenters'
 
+export const dynamic = 'force-static'
+
 export async function GET() {
   try {
     return NextResponse.json(testCenters)
