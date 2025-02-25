@@ -2,6 +2,7 @@ interface ICategories {
   title: string
   description: string
   resources: Array<IResources>
+  slug: string
 }
 
 interface IResources {
@@ -15,6 +16,7 @@ interface IResources {
 export const categories: Array<ICategories> = [
   {
     title: 'خودکشی و خودآزاری',
+    slug: 'suicide',
     description:
       'افکار خودکشی می‌تونه ترسناک و گیج­‌کننده باشه. اگر نگران خودتون یا یکی از اطرافیانتون هستین بهتره قبل از هر کاری با یک نفر صحبت کنین. همه‌ی سرویس‌ها رایگان هستند و هیچ درخواستی برای افشای هویت شما نمی‌کنند و تمامی اطلاعات و حرف‌های شما، محرمانه است',
     resources: [
@@ -45,6 +47,7 @@ export const categories: Array<ICategories> = [
   },
   {
     title: 'خشونت خانگی و آزار فیزیکی',
+    slug: 'violence',
     description:
       'اگر شما یا کسی که می‌شناسید قربانی خشونت خانگی یا آزار فیزیکی هستید، تنها نیستید. کمک در دسترس است و متخصصان آموزش‌دیده آماده‌اند تا به شما کمک کنند. تماس‌های شما محرمانه خواهد ماند.',
     resources: [
@@ -71,6 +74,7 @@ export const categories: Array<ICategories> = [
   },
   {
     title: 'اعتیاد و سوء مصرف مواد',
+    slug: 'addiction',
     description:
       'اعتیاد و سوءمصرف مواد می‌تونه چالش‌های بزرگی رو به وجود بیاره. اگر شما یا فردی از نزدیکانتون با این مسئله روبرو هستین، صحبت کردن با یک مشاور تخصصی می‌تونه اولین قدم مؤثر باشه.',
     resources: [
@@ -84,6 +88,7 @@ export const categories: Array<ICategories> = [
   },
   {
     title: 'بیماری‌های سخت درمان',
+    slug: 'illness',
     description:
       'ممکنه که خودت یا یکی از عزیزانت بیماری‌های سخت درمانی داشته باشه. هنوز امید هست، ناراحت نباش. اینجا میتونی منابعی برای کمک به خودت و دیگران پیدا کنی.',
     resources: [
@@ -108,6 +113,7 @@ export const categories: Array<ICategories> = [
   },
   {
     title: 'عمومی',
+    slug: 'general',
     description:
       'ممکنه که خودت یا یکی از عزیزانت بیماری‌های سخت درمانی داشته باشه. هنوز امید هست، ناراحت نباش. اینجا میتونی منابعی برای کمک به خودت و دیگران پیدا کنی.',
     resources: [

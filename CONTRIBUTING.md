@@ -22,7 +22,10 @@ Thank you for your interest in contributing to "Here To Help" project! This docu
 
 1. Clone the repository
 2. Install dependencies: `npm install`
-3. Start the development server: `npm run dev`
+3. Generate static API files: `npm run generate-api`
+4. Start the development server: `npm run dev`
+
+> Note: The `generate-api` script creates static JSON files in the `public/api` directory. These files are used when deploying to static hosting platforms like GitHub Pages.
 
 ## Coding Standards
 

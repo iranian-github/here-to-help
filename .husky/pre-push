@@ -1,1 +1,8 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# Run build
 npm run build
+
+# Check for API changes
+./scripts/check-api-changes.sh
