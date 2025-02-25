@@ -5,6 +5,7 @@ import Footer from '@/components/Footer'
 import { BackToTop } from '@/components/BackToTop'
 import EscapeButton from '@/components/EscapeButton'
 import Overlay from '@/components/Overlay'
+import TenantProvider from '../components/TenantProvider'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://heretohelp.ir'),
@@ -85,20 +86,22 @@ export default function RootLayout({
   return (
     <html lang='fa' dir='rtl'>
       <body className='relative m-0 min-h-screen leading-relaxed antialiased'>
-        <Overlay />
-        <Image
-          src='images/background.svg'
-          alt='Background image'
-          className='fixed left-0 top-0 -z-10 h-full w-full opacity-75 blur-[100px]'
-          width={1920}
-          height={1080}
-        />
-        <EscapeButton />
-        <div className='mx-auto flex min-h-screen max-w-[1100px] flex-col px-4 sm:px-6 lg:px-8'>
-          {children}
-          <BackToTop />
-          <Footer />
-        </div>
+        <TenantProvider>
+          <Overlay />
+          <Image
+            src='images/background.svg'
+            alt='Background image'
+            className='fixed left-0 top-0 -z-10 h-full w-full opacity-75 blur-[100px]'
+            width={1920}
+            height={1080}
+          />
+          <EscapeButton />
+          <div className='mx-auto flex min-h-screen max-w-[1100px] flex-col px-4 sm:px-6 lg:px-8'>
+            {children}
+            <BackToTop />
+            <Footer />
+          </div>
+        </TenantProvider>
       </body>
     </html>
   )

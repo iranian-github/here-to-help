@@ -15,6 +15,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --link-color: #0066cc;
+  --link-hover-color: #0055cc;
+  --card-bg: #f5f9f9ff;
+  --category-border: #8b5cf6;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -29,12 +33,12 @@ body {
 }
 
 a {
-  color: #0066cc;
+  color: var(--link-color);
   font-weight: 500;
 }
 
 a:hover {
-  color: #0055cc;
+  color: var(--link-hover-color);
 }
 
 .driverjs-theme {
@@ -67,11 +71,17 @@ a:hover {
 
 @layer components {
   .resource-card {
-    @apply flex h-full flex-col justify-center rounded-lg bg-gray-100 p-4 sm:rounded-xl sm:p-6;
+    @apply flex h-full flex-col justify-center rounded-lg p-4 sm:rounded-xl sm:p-6;
+    background-color: var(--card-bg);
   }
 
   .resource-button {
-    @apply w-full rounded-full bg-blue-500 px-4 py-2.5 text-center text-xs font-medium text-white transition-colors hover:bg-blue-600 hover:text-white sm:w-auto sm:px-5 sm:text-sm;
+    @apply w-full rounded-full px-4 py-2.5 text-center text-xs font-medium text-white transition-colors sm:w-auto sm:px-5 sm:text-sm;
+    background-color: var(--primary-color);
+  }
+
+  .resource-button:hover {
+    opacity: 0.9;
   }
 
   .resource-buttons-container {
@@ -83,11 +93,13 @@ a:hover {
   }
 
   .category-container {
-    @apply mx-0 mb-3 overflow-hidden rounded-xl border-r-4 border-[#8B5CF6] bg-white shadow-md transition-all duration-500 sm:mx-2.5 sm:mb-4 sm:rounded-2xl sm:border-r-8;
+    @apply mx-0 mb-3 overflow-hidden rounded-xl border-r-4 bg-white shadow-md transition-all duration-500 sm:mx-2.5 sm:mb-4 sm:rounded-2xl sm:border-r-8;
+    border-right-color: var(--primary-color);
   }
 
   .category-title {
-    @apply m-0 flex cursor-pointer select-none items-center justify-between bg-white p-5 text-base transition-colors sm:p-7 md:text-xl lg:text-2xl;
+    @apply m-0 flex cursor-pointer select-none items-center justify-between p-5 text-base transition-colors sm:p-7 md:text-xl lg:text-2xl;
+    background-color: var(--card-bg);
   }
 
   .category-content {
