@@ -17,5 +17,10 @@
   "[typescriptreact]": {
     "editor.formatOnSave": true,
     "editor.formatOnPaste": false
+  },
+  "[markdown]": {
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": true,
   }
 }
