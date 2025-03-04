@@ -1,4 +1,5 @@
 {
+  "editor.tabSize": 2,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.preferences.importModuleSpecifier": "shortest",
   "javascript.format.enable": false,
