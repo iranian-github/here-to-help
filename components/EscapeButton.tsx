@@ -58,7 +58,7 @@ const EscapeButton = () => {
     <button
       id='escape-button'
       onClick={handleEscape}
-      className='fixed right-4 top-4 z-50 flex h-10 w-10 items-center justify-center rounded-lg bg-white/90 p-2 text-gray-700 shadow-lg backdrop-blur transition-all duration-200 hover:bg-gray-100 hover:text-red-600 sm:h-12 sm:w-12 sm:p-3'
+      className='fixed top-4 right-4 z-50 flex h-10 w-10 items-center justify-center rounded-lg bg-white/90 p-2 text-gray-700 shadow-lg backdrop-blur transition-all duration-200 hover:bg-gray-100 hover:text-red-600 sm:h-12 sm:w-12 sm:p-3'
       aria-label='خروج سریع'
     >
       <XIcon />

@@ -30,12 +30,7 @@ export const categories: Array<ICategories> = [
         title: 'سامانه نوشتاری بحران',
         description:
           'یک سرویس ملی رایگان که ۲۴ ساعته به فارسی‌زبانانی که در شرایط بد عاطفی قرار دارند، مشاور بحران ارائه می‌دهد.',
-        other: [
-          {
-            url: 'https://irancrisisline.org/get-help/text/',
-            label: 'چت آنلاین',
-          },
-        ],
+        other: [{ url: 'https://irancrisisline.org/get-help/text/', label: 'چت آنلاین' }],
       },
       {
         title: 'مشاوره تلفنی بهزیستی',
@@ -95,13 +90,7 @@ export const categories: Array<ICategories> = [
       {
         title: 'مراکز آزمایش رایگان ایدز و مشاوره بیماری های رفتاری',
         description: 'در این مراکز علاوه بر مشاوره، آزمایش ایدز و تشخیص HIV به صورت رایگان انجام می‌شود.',
-        other: [
-          {
-            url: '/free-hiv-test-centers',
-            label: 'مشاهده لیست مراکز',
-            newTab: false,
-          },
-        ],
+        other: [{ url: '/free-hiv-test-centers', label: 'مشاهده لیست مراکز', newTab: false }],
       },
       {
         title: 'زنان سرپرست خانوار مبتلا به ایدز',
@@ -117,22 +106,10 @@ export const categories: Array<ICategories> = [
     description:
       'ممکنه که خودت یا یکی از عزیزانت بیماری‌های سخت درمانی داشته باشه. هنوز امید هست، ناراحت نباش. اینجا میتونی منابعی برای کمک به خودت و دیگران پیدا کنی.',
     resources: [
-      {
-        title: 'پلیس',
-        phone: '110',
-      },
-      {
-        title: 'اورژانس',
-        phone: '115',
-      },
-      {
-        title: 'آتش نشانی',
-        phone: '125',
-      },
-      {
-        title: 'هلال احمر',
-        phone: '112',
-      },
+      { title: 'پلیس', phone: '110' },
+      { title: 'اورژانس', phone: '115' },
+      { title: 'آتش نشانی', phone: '125' },
+      { title: 'هلال احمر', phone: '112' },
     ],
   },
 ]

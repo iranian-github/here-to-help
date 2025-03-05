@@ -11,14 +11,8 @@ export const metadata: Metadata = {
   title,
   description,
   keywords: ['مراکز آزمایش رایگان ایدز', 'مراکز مشاوره بیماری های رفتاری'],
-  openGraph: {
-    title,
-    description,
-  },
-  twitter: {
-    title,
-    description,
-  },
+  openGraph: { title, description },
+  twitter: { title, description },
 }
 
 export default function FreeHIVTestCenters() {
@@ -44,7 +38,7 @@ export default function FreeHIVTestCenters() {
                 <tr key={index} className='hover:bg-gray-50'>
                   <td className='border border-gray-300 p-3 text-center'>{center.city}</td>
                   <td className='border border-gray-300 p-3 text-center'>{center.address}</td>
-                  <td className='font-mono border border-gray-300 p-3 text-center'>
+                  <td className='border border-gray-300 p-3 text-center font-mono'>
                     {center.phoneNumbers.map((phone, idx) => (
                       <span key={idx}>
                         <Link href={`tel:${phone}`} key={idx}>

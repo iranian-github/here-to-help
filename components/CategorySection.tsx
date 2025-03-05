@@ -22,7 +22,7 @@ export default function CategorySection({ title, description, resources }: Categ
       <h2 onClick={() => setIsOpen(!isOpen)} className={`category-title ${!isOpen ? 'hover:bg-card-hover' : ''}`}>
         {title}
         <span
-          className={`accordion-icon select-none text-base font-light transition-transform duration-500 lg:text-2xl ${
+          className={`accordion-icon text-base font-light transition-transform duration-500 select-none lg:text-2xl ${
             isOpen ? 'rotate-45' : ''
           }`}
         >

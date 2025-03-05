@@ -48,14 +48,8 @@ export const metadata: Metadata = {
     ],
     apple: [{ url: '/apple-touch-icon.png' }],
     other: [
-      {
-        rel: 'android-chrome-192x192',
-        url: '/android-chrome-192x192.png',
-      },
-      {
-        rel: 'android-chrome-512x512',
-        url: '/android-chrome-512x512.png',
-      },
+      { rel: 'android-chrome-192x192', url: '/android-chrome-192x192.png' },
+      { rel: 'android-chrome-512x512', url: '/android-chrome-512x512.png' },
     ],
   },
   manifest: '/site.webmanifest',
@@ -63,25 +57,13 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
+    googleBot: { index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1 },
   },
 }
 
-export const viewport: Viewport = {
-  width: 'device-width',
-  initialScale: 1.0,
-}
+export const viewport: Viewport = { width: 'device-width', initialScale: 1.0 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang='fa' dir='rtl'>
       <body className='relative m-0 min-h-screen leading-relaxed antialiased'>
@@ -89,7 +71,7 @@ export default function RootLayout({
         <Image
           src='images/background.svg'
           alt='Background image'
-          className='fixed left-0 top-0 -z-10 h-full w-full opacity-75 blur-[100px]'
+          className='fixed top-0 left-0 -z-10 h-full w-full opacity-75 blur-[100px]'
           width={1920}
           height={1080}
         />

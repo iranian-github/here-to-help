@@ -32,10 +32,7 @@ export const BackToTop = () => {
   }, [isVisible])
 
   const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    })
+    window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
   if (!shouldRender) return null
@@ -43,7 +40,7 @@ export const BackToTop = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-4 right-4 z-50 rounded-full bg-blue-500 p-2 text-white shadow-lg transition-all duration-300 hover:bg-blue-600 ${
+      className={`fixed right-4 bottom-4 z-50 rounded-full bg-blue-500 p-2 text-white shadow-lg transition-all duration-300 hover:bg-blue-600 ${
         isVisible ? 'animate-fade-in' : 'animate-fade-out'
       }`}
       aria-label='Back to top'
