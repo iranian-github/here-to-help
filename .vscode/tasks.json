@@ -7,6 +7,13 @@
       "group": "build",
       "label": "npm: install dependencies",
       "detail": "Install project dependencies"
+    },
+    {
+      "type": "npm",
+      "script": "generate-api",
+      "group": "build",
+      "label": "npm: generate static API files",
+      "detail": "Generate static API files"
     }
   ]
 }
