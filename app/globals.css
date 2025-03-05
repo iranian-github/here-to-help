@@ -26,6 +26,13 @@ body {
   font-family: 'Vazirmatn', Arial, Helvetica, sans-serif;
 }
 
+@layer base {
+  body,
+  * {
+    font-family: 'Vazirmatn', Arial, Helvetica, sans-serif;
+  }
+}
+
 .driverjs-theme {
   direction: rtl !important;
   font-family: inherit !important;
@@ -56,7 +63,7 @@ body {
 
 @layer base {
   a {
-    @apply font-medium text-blue-600 hover:text-blue-700;
+    @apply text-blue-600 hover:text-blue-700;
   }
 }
 
