@@ -10,7 +10,10 @@
     "prepare": "husky",
     "generate-api": "tsx scripts/generate-static-api.ts",
     "update-check": "ncu",
-    "update-packages": "ncu -u && npm install"
+    "update-packages": "ncu -u && npm install",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:e2e:debug": "playwright test --debug"
   },
   "dependencies": {
     "driver.js": "^1.3.5",
@@ -20,6 +23,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.0",
+    "@playwright/test": "^1.50.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^22",
     "@types/react": "^19.0.10",
