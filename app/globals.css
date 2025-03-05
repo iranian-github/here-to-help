@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
 @font-face {
   font-family: 'Vazirmatn';
@@ -26,15 +24,6 @@
 
 body {
   font-family: 'Vazirmatn', Arial, Helvetica, sans-serif;
-}
-
-a {
-  color: #0066cc;
-  font-weight: 500;
-}
-
-a:hover {
-  color: #0055cc;
 }
 
 .driverjs-theme {
@@ -65,6 +54,12 @@ a:hover {
   background-color: rgb(75 85 99) !important;
 }
 
+@layer base {
+  a {
+    @apply font-medium text-blue-600 hover:text-blue-700;
+  }
+}
+
 @layer components {
   .resource-card {
     @apply flex h-full flex-col justify-center rounded-lg bg-gray-100 p-4 sm:rounded-xl sm:p-6;
@@ -87,7 +82,7 @@ a:hover {
   }
 
   .category-title {
-    @apply m-0 flex cursor-pointer select-none items-center justify-between bg-white p-5 text-base transition-colors sm:p-7 md:text-xl lg:text-2xl;
+    @apply m-0 flex cursor-pointer items-center justify-between bg-white p-5 text-base transition-colors select-none sm:p-7 md:text-xl lg:text-2xl;
   }
 
   .category-content {
