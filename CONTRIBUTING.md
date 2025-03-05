@@ -22,8 +22,43 @@ Thank you for your interest in contributing to "Here To Help" project! This docu
 
 1. Clone the repository
 2. Install dependencies: `npm install`
-3. Generate static API files: `npm run generate-api`
-4. Start the development server: `npm run dev`
+3. Set up environment variables (see below)
+4. Generate static API files: `npm run generate-api`
+5. Start the development server: `npm run dev`
+
+## Environment Variables
+
+This project uses environment variables for configuration. Follow these steps to set up your environment:
+
+1. Copy `.env.example` to create your local environment file:
+
+   ```bash
+   cp .env.example .env.local
+   ```
+
+2. Update the values in `.env.local` with your actual configuration
+
+### Environment Files
+
+- `.env.local`: Local development variables (not committed to git)
+- `.env.development`: Development environment defaults
+- `.env.production`: Production environment defaults
+- `.env.example`: Template with example variables (committed to git)
+
+### Git Ignored Environment Files
+
+The following files are ignored in git for security:
+- `.env` - Any base environment file
+- `.env.local` - Local environment overrides
+- `.env*.local` - All local environment variations (e.g., `.env.development.local`)
+
+Only `.env.example` is committed to the repository as a template.
+
+### Important Notes
+
+- Never commit sensitive values to git
+- Use `NEXT_PUBLIC_` prefix for variables that need to be exposed to the browser
+- For production deployment, set your environment variables in your GitHub repository settings under Secrets and Variables
 
 > Note: The `generate-api` script creates static JSON files in the `public/api` directory. These files are used when deploying to static hosting platforms like GitHub Pages.
 
