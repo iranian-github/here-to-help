@@ -17,8 +17,16 @@ jobs:
         run: npm ci
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
+      - name: Install serve
+        run: npm install -g serve
+      - name: Build application
+        run: npm run build
+      - name: Start static file server
+        run: serve out & npx wait-on http://localhost:3000
       - name: Run Playwright tests
         run: npx playwright test
+        env:
+          PLAYWRIGHT_TEST_BASE_URL: http://localhost:3000
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with:
