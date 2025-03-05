@@ -20,9 +20,9 @@ export default function FreeHIVTestCenters() {
     <>
       <Header />
       <main className='flex-grow lg:mb-16'>
-        <h1 className='mb-12 text-center text-xl font-bold md:text-3xl'>
+        <h2 className='mb-12 text-center text-xl font-bold md:text-3xl'>
           لیست مراکز آزمایش رایگان ایدز و مشاوره بیماری های رفتاری
-        </h1>
+        </h2>
 
         <div className='overflow-x-auto'>
           <table className='min-w-full border-collapse border border-gray-300'>
