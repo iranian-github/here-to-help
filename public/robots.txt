@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Prevent API access
+Disallow: /api/
+Disallow: /api/*
+
+# Sitemap
+Sitemap: https://heretohelp.ir/sitemap.xml
