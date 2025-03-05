@@ -3,6 +3,7 @@ import { useState } from 'react'
 import ResourceCard from './ResourceCard'
 
 interface CategorySectionProps {
+  slug: string
   title: string
   description?: string
   resources: Array<{
@@ -14,12 +15,16 @@ interface CategorySectionProps {
   }>
 }
 
-export default function CategorySection({ title, description, resources }: CategorySectionProps) {
+export default function CategorySection({ slug, title, description, resources }: CategorySectionProps) {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
     <section className='category-container'>
-      <h2 onClick={() => setIsOpen(!isOpen)} className={`category-title ${!isOpen ? 'hover:bg-card-hover' : ''}`}>
+      <h2
+        id={`category-${slug}`}
+        onClick={() => setIsOpen(!isOpen)}
+        className={`category-title ${!isOpen ? 'hover:bg-card-hover' : ''}`}
+      >
         {title}
         <span
           className={`accordion-icon text-base font-light transition-transform duration-500 select-none lg:text-2xl ${
