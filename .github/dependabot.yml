@@ -1,0 +1,31 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Asia/Tehran"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+      - "npm"
+    versioning-strategy: auto
+    commit-message:
+      prefix: "⬆️ "
+      include: "scope"
+    pull-request-branch-name:
+      separator: "-"
+    reviewers:
+      - "codewithemad"
+    ignore:
+      # Ignore major version updates for these packages
+      - dependency-name: "next"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "react"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "react-dom"
+        update-types: ["version-update:semver-major"]
+      - dependency-name: "tailwind"
+        update-types: ["version-update:semver-major"]
