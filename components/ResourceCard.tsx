@@ -12,9 +12,9 @@ export default function ResourceCard({ title, description, phone, website, other
   return (
     <div className='resource-card'>
       <div className={`${!description ? 'sm:flex sm:items-center sm:justify-between' : ''}`}>
-        <h3 className={`text-base font-bold sm:text-lg ${description ? 'mb-3 sm:mb-4' : ''}`}>{title}</h3>
+        <h3 className={`text-base font-bold sm:text-lg ${description ? 'mb-3 sm:mb-4' : 'mb-4 sm:mb-0'}`}>{title}</h3>
         {!description && (
-          <div className='resource-buttons-container'>
+          <div className='flex flex-col sm:flex-row gap-2 sm:gap-3'>
             {phone && (
               <Link href={`tel:${phone}`} className='resource-button'>
                 تماس
