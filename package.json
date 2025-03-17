@@ -29,7 +29,7 @@
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
     "eslint": "^9.22.0",
-    "eslint-config-next": "15.2.1",
+    "eslint-config-next": "15.2.2",
     "husky": "^9.1.7",
     "npm-check-updates": "^17.1.15",
     "postcss": "^8.5.3",
