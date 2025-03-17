@@ -38,6 +38,6 @@
     "tailwindcss": "^4.0.12",
     "tsx": "^4.19.3",
     "typescript": "^5.8.2",
-    "wait-on": "^8.0.2"
+    "wait-on": "^8.0.3"
   }
 }
