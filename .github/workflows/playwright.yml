@@ -14,13 +14,13 @@ jobs:
         with:
           node-version: lts/*
       - name: Install dependencies
-        run: npm ci
+        run: yarn install
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
       - name: Install serve
-        run: npm install -g serve
+        run: yarn global add serve
       - name: Build application
-        run: npm run build
+        run: yarn build
       - name: Start static file server
         run: serve out & npx wait-on http://localhost:3000
       - name: Run Playwright tests
