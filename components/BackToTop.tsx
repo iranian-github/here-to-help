@@ -11,8 +11,6 @@ export const BackToTop = () => {
     const scrolled = window.scrollY
     const viewportHeight = window.innerHeight
     const contentHeight = document.documentElement.scrollHeight
-
-    // Show button if we've scrolled down and there's overflow
     setIsVisible(scrolled > 300 && contentHeight > viewportHeight)
   }
 
@@ -22,14 +20,13 @@ export const BackToTop = () => {
   }, [])
 
   useEffect(() => {
-    if (isVisible) setShouldRender(true)
-    else {
-      const timer = setTimeout(() => {
-        setShouldRender(false)
-      }, 300) // Same duration as our animation
+    if (isVisible) {
+      setShouldRender(true)
+    } else if (!isVisible && shouldRender) {
+      const timer = setTimeout(() => setShouldRender(false), 300)
       return () => clearTimeout(timer)
     }
-  }, [isVisible])
+  }, [isVisible, shouldRender])
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -40,8 +37,8 @@ export const BackToTop = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed right-4 bottom-4 z-50 rounded-full bg-blue-500 p-2 text-white shadow-lg transition-all duration-300 hover:bg-blue-600 ${
-        isVisible ? 'animate-fade-in' : 'animate-fade-out'
+      className={`fixed right-4 bottom-4 z-50 rounded-full bg-blue-500 p-2 text-white shadow-lg ${
+        isVisible ? 'animate-fade-in opacity-100' : 'animate-fade-out opacity-0'
       }`}
       aria-label='Back to top'
     >
