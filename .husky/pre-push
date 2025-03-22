@@ -2,7 +2,7 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 # Run build
-npm run build
+yarn build
 
 # Check for API changes
 ./scripts/check-api-changes.sh

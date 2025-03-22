@@ -2,6 +2,9 @@
   "name": "here-to-help",
   "version": "0.1.0",
   "private": true,
+  "repository": "git@github.com:iranian-github/here-to-help.git",
+  "author": "Emad Rad <codewithemad@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",

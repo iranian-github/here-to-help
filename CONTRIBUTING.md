@@ -14,17 +14,17 @@ Thank you for your interest in contributing to "Here To Help" project! This docu
 
 ## Pull Request Process
 
-1. Update the README.md with details of changes if applicable
+1. Update the `README.md` with details of changes if applicable
 2. Ensure any install or build dependencies are removed before the end of the layer
 3. The PR will be merged once you have the sign-off of at least one maintainer
 
 ## Development Setup
 
 1. Clone the repository
-2. Install dependencies: `npm install`
+2. Install dependencies: `yarn install`
 3. Set up environment variables (see below)
-4. Generate static API files: `npm run generate-api`
-5. Start the development server: `npm run dev`
+4. Generate static API files: `yarn run generate-api`
+5. Start the development server: `yarn run dev`
 
 ## Environment Variables
 
@@ -48,6 +48,7 @@ This project uses environment variables for configuration. Follow these steps to
 ### Git Ignored Environment Files
 
 The following files are ignored in git for security:
+
 - `.env` - Any base environment file
 - `.env.local` - Local environment overrides
 - `.env*.local` - All local environment variations (e.g., `.env.development.local`)
