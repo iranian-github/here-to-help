@@ -32,7 +32,7 @@ export default function Footer() {
       </p>
 
       <p className='footer-text mb-2 pt-6 text-center'>
-        کپی‌رایت © <span>{year}</span>.<span> اینجا برای کمک هستیم. تمامی حقوق محفوظ است.</span>
+        کپی‌رایت © <span>{year}</span>.<span> اینجائیم برای کمک. تمامی حقوق محفوظ است.</span>
       </p>
     </footer>
   )
