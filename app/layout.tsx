@@ -5,6 +5,7 @@ import Footer from '@/components/Footer'
 import { BackToTop } from '@/components/BackToTop'
 import EscapeButton from '@/components/EscapeButton'
 import Overlay from '@/components/Overlay'
+import TelegramButton from '@/components/TelegramButton'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://heretohelp.ir'),
@@ -76,6 +77,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           height={1080}
         />
         <EscapeButton />
+        <TelegramButton />
         <div className='mx-auto flex min-h-screen max-w-[1100px] flex-col px-4 sm:px-6 lg:px-8'>
           {children}
           <BackToTop />
