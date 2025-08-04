@@ -2337,10 +2337,10 @@ next@15.2.3:
     "@next/swc-win32-x64-msvc" "15.2.3"
     sharp "^0.33.5"
 
-npm-check-updates@^17.1.16:
-  version "17.1.16"
-  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-17.1.16.tgz#28f5debfb81b29bf152162de810beb526b638226"
-  integrity sha512-9nohkfjLRzLfsLVGbO34eXBejvrOOTuw5tvNammH73KEFG5XlFoi3G2TgjTExHtnrKWCbZ+mTT+dbNeSjASIPw==
+npm-check-updates@^18.0.2:
+  version "18.0.2"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-18.0.2.tgz#ff956c9ae0eab87eaf4ae586849203ca91257f02"
+  integrity sha512-9uVFZUCg5oDOcbzdsrJ4BEvq2gikd23tXuF5mqpl4mxVl051lzB00Xmd7ZVjVWY3XNUF3BQKWlN/qmyD8/bwrA==
 
 object-assign@^4.1.1:
   version "4.1.1"
