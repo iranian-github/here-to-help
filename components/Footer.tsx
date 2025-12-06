@@ -2,15 +2,9 @@
 
 import { toFarsiNumber } from '@/utils/farsiNumber'
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
 
 export default function Footer() {
-  const [year, setYear] = useState<string>('')
-
-  useEffect(() => {
-    const currentYear = new Date().getFullYear()
-    setYear(toFarsiNumber(currentYear))
-  }, [])
+  const year = toFarsiNumber(new Date().getFullYear())
 
   return (
     <footer className='text-brand-footer mt-auto p-4 pt-8 text-xs font-normal text-gray-500 sm:p-5 sm:pt-12'>
