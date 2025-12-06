@@ -20,8 +20,16 @@ test.describe('General Tests', () => {
 
   test('Back to top button functionality', async ({ page }) => {
     // Initially button should not be visible
-    const backToTopButton = page.getByRole('button', { name: 'Back to top' })
+    const backToTopButton = page.locator('#back-to-top')
     await expect(backToTopButton).not.toBeVisible()
+
+    // Click on the category containers to add enough content to scroll
+    // class category-container
+    const categoryContainers = page.locator('.category-container')
+    const containerCount = await categoryContainers.count()
+    for (let i = 0; i < containerCount; i++) {
+      await categoryContainers.nth(i).click()
+    }
 
     // Scroll down to make the button appear
     await page.evaluate(() => {
