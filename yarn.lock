@@ -333,7 +333,7 @@
   dependencies:
     "@types/json-schema" "^7.0.15"
 
-"@eslint/eslintrc@^3.3.1", "@eslint/eslintrc@^3.3.3":
+"@eslint/eslintrc@^3.3.1":
   version "3.3.3"
   resolved "https://registry.npmjs.org/@eslint/eslintrc/-/eslintrc-3.3.3.tgz"
   integrity sha512-Kr+LPIUVKz2qkx1HAMH8q1q6azbqBAsXJUxBl/ODDuVPX45Z9DfwB8tPjTi6nNZ8BuM3nbJxC5zCAg5elnBUTQ==
@@ -2662,10 +2662,10 @@ node-releases@^2.0.27:
   resolved "https://registry.npmjs.org/node-releases/-/node-releases-2.0.27.tgz"
   integrity sha512-nmh3lCkYZ3grZvqcCH+fjmQ7X+H0OeZgP40OierEaAptX4XofMh5kwNbWh7lBduUzCcV/8kZ+NDLCwm2iorIlA==
 
-npm-check-updates@^19.1.2:
-  version "19.1.2"
-  resolved "https://registry.npmjs.org/npm-check-updates/-/npm-check-updates-19.1.2.tgz"
-  integrity sha512-FNeFCVgPOj0fz89hOpGtxP2rnnRHR7hD2E8qNU8SMWfkyDZXA/xpgjsL3UMLSo3F/K13QvJDnbxPngulNDDo/g==
+npm-check-updates@^19.2.0:
+  version "19.2.0"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-19.2.0.tgz#5dd11b505e11e6db602fe45c0ad6e8c0dcc94959"
+  integrity sha512-XSIuL0FNgzXPDZa4lje7+OwHjiyEt84qQm6QMsQRbixNY5EHEM9nhgOjxjlK9jIbN+ysvSqOV8DKNS0zydwbdg==
 
 object-assign@^4.1.1:
   version "4.1.1"
