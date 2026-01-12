@@ -2668,10 +2668,10 @@ node-releases@^2.0.27:
   resolved "https://registry.npmjs.org/node-releases/-/node-releases-2.0.27.tgz"
   integrity sha512-nmh3lCkYZ3grZvqcCH+fjmQ7X+H0OeZgP40OierEaAptX4XofMh5kwNbWh7lBduUzCcV/8kZ+NDLCwm2iorIlA==
 
-npm-check-updates@^19.1.2:
-  version "19.1.2"
-  resolved "https://registry.npmjs.org/npm-check-updates/-/npm-check-updates-19.1.2.tgz"
-  integrity sha512-FNeFCVgPOj0fz89hOpGtxP2rnnRHR7hD2E8qNU8SMWfkyDZXA/xpgjsL3UMLSo3F/K13QvJDnbxPngulNDDo/g==
+npm-check-updates@^19.3.1:
+  version "19.3.1"
+  resolved "https://registry.yarnpkg.com/npm-check-updates/-/npm-check-updates-19.3.1.tgz#a68748bca9b029e8153508f7ef3e4f0b3a1a83d5"
+  integrity sha512-v92fHH8fmf9VVmQwwL5JWpX8GDEe8BDyrz4w3GF6D6JBUZKpQNcTfBBgxVkCcAPzVUjCHSZEXYmZAAKfLTsDBA==
 
 object-assign@^4.1.1:
   version "4.1.1"
