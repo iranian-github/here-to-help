@@ -47,10 +47,15 @@ const EscapeButton = () => {
         ],
       })
       // Start the tour with a slight delay to ensure the button is rendered
-      setTimeout(() => {
+      const timeoutId = setTimeout(() => {
         driverObj.drive()
         localStorage.setItem('hasSeenEscapeButtonTour', 'true')
       }, 1000)
+
+      return () => {
+        clearTimeout(timeoutId)
+        driverObj.destroy()
+      }
     }
   }, [])
 
