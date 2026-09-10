@@ -47,6 +47,14 @@ test.describe('EscapeButton', () => {
     await expect(tourPopover.locator('.driver-popover-description')).toContainText('در صورت نیاز به خروج سریع')
   })
 
+  test('should only render one tour popover on first visit', async ({ page }) => {
+    await page.goto('/')
+    await page.evaluate(() => localStorage.clear())
+    await page.reload()
+
+    await expect(page.locator('.driverjs-theme')).toHaveCount(1, { timeout: 5000 })
+  })
+
   test('should not show tour for returning visitors', async ({ page }) => {
     await page.goto('/')
     // Set localStorage to simulate returning visitor
