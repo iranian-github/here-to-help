@@ -13,34 +13,34 @@
     "prepare": "husky",
     "generate-api": "tsx scripts/generate-static-api.ts",
     "update-check": "ncu",
-    "update-packages": "ncu -u && npm install",
+    "update-packages": "ncu -u && yarn install",
     "test:e2e": "playwright test",
     "test:e2e:ui": "playwright test --ui",
     "test:e2e:debug": "playwright test --debug"
   },
   "dependencies": {
-    "driver.js": "^1.4.0",
-    "next": "^16.2.6",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "driver.js": "^1.8.0",
+    "next": "^16.3.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.5",
-    "@playwright/test": "^1.57.0",
-    "@tailwindcss/postcss": "^4.1.17",
-    "@types/node": "^24.10.1",
-    "@types/react": "^19.2.7",
-    "@types/react-dom": "^19.2.3",
+    "@eslint/eslintrc": "^3.3.7",
+    "@playwright/test": "^1.63.0",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.5.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
     "eslint": "^9.39.4",
-    "eslint-config-next": "16.2.6",
+    "eslint-config-next": "16.3.4",
     "husky": "^9.1.7",
-    "npm-check-updates": "^19.1.2",
-    "postcss": "^8.5.6",
-    "prettier": "^3.7.4",
-    "prettier-plugin-tailwindcss": "^0.7.2",
-    "tailwindcss": "^4.1.17",
-    "tsx": "^4.21.0",
+    "npm-check-updates": "^23.1.0",
+    "postcss": "^8.5.28",
+    "prettier": "^3.9.6",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.13",
     "typescript": "^5.9.3",
-    "wait-on": "^9.0.10"
+    "wait-on": "^9.1.0"
   }
 }
