@@ -29,6 +29,7 @@ jobs:
 
   # Build job
   build:
+    needs: [run-tests, run-playwright]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
