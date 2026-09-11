@@ -16,15 +16,15 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+        run: yarn playwright install --with-deps
       - name: Install serve
         run: yarn global add serve
       - name: Build application
         run: yarn build
       - name: Start static file server
-        run: serve out & npx wait-on http://localhost:3000
+        run: serve out & yarn wait-on http://localhost:3000
       - name: Run Playwright tests
-        run: npx playwright test
+        run: yarn playwright test
         env:
           PLAYWRIGHT_TEST_BASE_URL: http://localhost:3000
       - uses: actions/upload-artifact@v4
