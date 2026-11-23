@@ -21,6 +21,19 @@ const EscapeButton = () => {
     }, 50)
   }, [])
 
+  // Pressing Escape three times within 1.5s also leaves the site.
+  useEffect(() => {
+    let presses: number[] = []
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== 'Escape') return
+      const now = Date.now()
+      presses = [...presses.filter((t) => now - t < 1500), now]
+      if (presses.length >= 3) handleEscape()
+    }
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [handleEscape])
+
   useEffect(() => {
     // Check if the tour has been shown before
     const hasSeenTour = localStorage.getItem('hasSeenEscapeButtonTour')
@@ -39,7 +52,8 @@ const EscapeButton = () => {
             element: '#escape-button',
             popover: {
               title: 'دکمه خروج سریع',
-              description: 'در صورت نیاز به خروج سریع، این دکمه شما را به صفحه گوگل منتقل می‌کند',
+              description:
+                'در صورت نیاز به خروج سریع، این دکمه شما را به صفحه گوگل منتقل می‌کند. سه بار فشردن سریع کلید Esc هم همین کار را می‌کند.',
               side: 'bottom',
               align: 'start',
             },

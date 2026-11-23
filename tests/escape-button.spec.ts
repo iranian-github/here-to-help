@@ -67,4 +67,13 @@ test.describe('EscapeButton', () => {
     const tourPopover = page.locator('.driverjs-theme')
     await expect(tourPopover).not.toBeVisible({ timeout: 2000 })
   })
+
+  test('should leave the site after pressing Escape three times', async ({ page }) => {
+    await page.goto('/')
+    await page.locator('.driver-popover-next-btn').click()
+    const nav = page.waitForNavigation()
+    for (let i = 0; i < 3; i++) await page.keyboard.press('Escape')
+    await nav
+    expect(page.url()).toContain('google.com')
+  })
 })
