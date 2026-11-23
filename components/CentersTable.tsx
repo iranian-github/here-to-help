@@ -87,7 +87,7 @@ export default function CentersTable({ centers, searchable = true }: { centers: 
       <p className='mt-6 text-center text-sm text-gray-600'>
         شماره یا آدرسی اشتباهه یا مرکزی جا افتاده؟{' '}
         <Link
-          href='https://github.com/iranian-github/here-to-help/issues/new/choose'
+          href='https://github.com/iranian-github/here-to-help/issues/new?template=wrong_data.md'
           target='_blank'
           rel='noopener noreferrer'
           className='text-blue-600 hover:underline'
