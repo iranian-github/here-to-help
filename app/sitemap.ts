@@ -1,14 +1,16 @@
 import { MetadataRoute } from 'next'
+import { testCenters } from '@/data/freeHIVTestCenters'
+import { citySlug } from '@/utils/citySlug'
 
 export const dynamic = 'force-static'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://heretohelp.ir'
 
-  const routes = [
+  const routes: string[] = [
     '',
     '/free-hiv-test-centers',
-    // TODO: We can make this dynamic
+    ...new Set(testCenters.map((c) => `/free-hiv-test-centers/${citySlug(c.city)}`)),
   ]
 
   return routes.map((route) => ({

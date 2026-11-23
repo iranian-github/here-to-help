@@ -1,4 +1,4 @@
-interface TestCenter {
+export interface TestCenter {
   city: string
   address: string
   phoneNumbers: string[]
