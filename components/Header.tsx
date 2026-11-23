@@ -9,7 +9,10 @@ export default function Header() {
         </Link>
       </h1>
       <p className='mx-auto max-w-2xl text-base leading-relaxed text-gray-500 sm:text-lg'>
-        لازم نیست به تنهایی از این مسیر عبور کنید.
+        لازم نیست به تنهایی از این مسیر عبور کنی.
+      </p>
+      <p className='mx-auto max-w-2xl text-base leading-relaxed text-gray-500 sm:text-lg'>
+        ما اینجائیم تا بهت کمک کنیم تا با چالش‌های زندگی روبرو شی و راه‌حل‌ رو پیدا کنی.
       </p>
     </header>
   )
