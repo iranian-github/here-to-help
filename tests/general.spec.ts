@@ -49,3 +49,13 @@ test.describe('General Tests', () => {
     await expect(page.evaluate(() => window.scrollY)).resolves.toBe(0)
   })
 })
+
+test('pages keep working offline after a first visit', async ({ page, context }) => {
+  await page.goto('/free-hiv-test-centers')
+  await page.evaluate(() => navigator.serviceWorker.ready)
+  await page.reload() // now controlled by the service worker, which caches as it fetches
+  await page.waitForLoadState('networkidle')
+  await context.setOffline(true)
+  await page.reload()
+  await expect(page.getByRole('heading', { level: 2 })).toContainText('لیست مراکز آزمایش رایگان ایدز')
+})

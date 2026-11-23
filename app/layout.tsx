@@ -5,6 +5,7 @@ import Footer from '@/components/Footer'
 import { BackToTop } from '@/components/BackToTop'
 import EscapeButton from '@/components/EscapeButton'
 import Overlay from '@/components/Overlay'
+import ServiceWorker from '@/components/ServiceWorker'
 import TelegramButton from '@/components/TelegramButton'
 
 export const metadata: Metadata = {
@@ -69,6 +70,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang='fa' dir='rtl'>
       <body className='relative m-0 min-h-screen leading-relaxed antialiased'>
         <Overlay />
+        <ServiceWorker />
         <Image
           src='images/background.svg'
           alt='Background image'
