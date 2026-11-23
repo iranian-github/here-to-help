@@ -105,4 +105,13 @@ test.describe('Home Page', () => {
       }
     }
   })
+
+  test('category headers are accessible toggle buttons', async ({ page }) => {
+    const button = page.getByRole('button', { name: /خودکشی/ })
+    await expect(button).toHaveAttribute('aria-expanded', 'false')
+    await button.focus()
+    await page.keyboard.press('Enter')
+    await expect(button).toHaveAttribute('aria-expanded', 'true')
+    await expect(page.getByText('خط ملی اورژانس اجتماعی')).toBeVisible()
+  })
 })
