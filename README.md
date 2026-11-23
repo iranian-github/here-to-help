@@ -24,7 +24,7 @@ You can find the Persian version of this document [here](README-fa.md).
 - Community-verified information
 - Easy-to-navigate structure
 - Regular updates and maintenance
-- No data collection from users
+- No data collection from users (the only thing stored is a local browser flag so the quick-exit tip shows once, plus an offline page cache; nothing is sent anywhere)
 
 ## ⚠️ Disclaimer
 
