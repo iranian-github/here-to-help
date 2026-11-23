@@ -27,10 +27,12 @@ yarn playwright test -g "filter centers by city" --project=chromium         # on
 ## Architecture
 
 **`data/` is the single source of truth.** Content is plain TS, not a CMS or DB.
+
 - `data/categories.ts`: home-page accordion sections and their resource cards.
 - `data/freeHIVTestCenters.ts`: ~100 centers (`city`, `address`, `phoneNumbers`). A city can appear on several rows (e.g. تهران) and `سرباز` is duplicated; consumers group by slug.
 
 Derived outputs that must stay in sync with `data/`:
+
 - `public/api/*.json` are **generated and committed**. After editing anything in `data/`, run `yarn generate-api` and commit the JSON (`app/api/*/route.ts` also serve the data under static export).
 - HIV pages: `/free-hiv-test-centers` (all centers, client-side city search in `components/CentersTable.tsx`) and `/free-hiv-test-centers/[city]` (one static page per city via `generateStaticParams`, `dynamicParams = false`). `utils/citySlug.ts` builds the Persian slug (parentheses dropped, words joined by `-`). The slug function is shared by the table links, the page's `generateStaticParams`, and `app/sitemap.ts`, so change it in one place only. Keep `citySlug` out of `data/` so client components don't bundle the whole dataset.
 - `app/sitemap.ts` is generated from the same data.
